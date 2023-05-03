@@ -1,0 +1,25 @@
+# Transcribes audio into the input language.
+# POST https://api.openai.com/v1/audio/transcriptions
+
+# curl https://api.openai.com/v1/audio/transcriptions
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+#  -H "Content-Type: multipart/form-data"
+#  -F file="@./data/micro-machines.mp3"
+#  -F model="whisper-1"
+POST https://api.openai.com/v1/audio/transcriptions
+Authorization: Bearer {{OPENAI_API_KEY}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file" filename="micro-machines.mp3"
+
+< ./data/micro-machines.mp3
+--WebAppBoundary
+Content-Disposition: form-data; name="model"
+
+whisper-1
+
+###
+
+
+

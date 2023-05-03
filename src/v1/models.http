@@ -1,0 +1,39 @@
+# curl https://api.openai.com/v1/models
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+#  -H "OpenAI-Organization: org-G2Pxt0ufgwo08rKBpOMwDXTD"
+
+GET https://api.openai.com/v1/models
+Authorization: Bearer {{OPENAI_API_KEY}}
+OpenAI-Organization: {{OPENAI_ORGANIZATION_ID}}
+
+# Retrieves a model instance, providing basic information about the model such as the owner and permissioning.
+# GET https://api.openai.com/v1/models/{model}
+
+# curl https://api.openai.com/v1/models/text-davinci-003
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+GET https://api.openai.com/v1/models/text-davinci-003
+Authorization: Bearer {{OPENAI_API_KEY}}
+
+###
+
+
+# curl https://api.openai.com/v1/models/text-davinci-003
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+GET https://api.openai.com/v1/models/text-davinci-003
+Authorization: Bearer {{OPENAI_API_KEY}}
+OpenAI-Organization: {{OPENAI_ORGANIZATION_ID}}
+
+###
+
+# Delete a fine-tuned model. You must have the Owner role in your organization.
+# DELETE https://api.openai.com/v1/models/{model}
+
+# curl https://api.openai.com/v1/models/curie:ft-acmeco-2021-03-03-21-44-20
+#  -X DELETE
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+DELETE https://api.openai.com/v1/models/curie:ft-acmeco-2021-03-03-21-44-20
+Authorization: Bearer {{OPENAI_API_KEY}}
+OpenAI-Organization: {{OPENAI_ORGANIZATION_ID}}
+
+###
+

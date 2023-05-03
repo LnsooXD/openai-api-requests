@@ -1,0 +1,60 @@
+# Returns a list of files that belong to the user's organization.
+# GET https://api.openai.com/v1/files
+
+# curl https://api.openai.com/v1/files
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+GET https://api.openai.com/v1/files
+Authorization: Bearer {{OPENAI_API_KEY}}
+
+###
+
+# Upload a file that contains document(s) to be used across various endpoints/features.
+# Currently, the size of all the files uploaded by one organization can be up to 1 GB.
+# Please contact us if you need to increase the storage limit.
+
+# POST https://api.openai.com/v1/files
+
+# curl https://api.openai.com/v1/files
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+#  -F purpose="fine-tune"
+#  -F file="@./data/FileToUpload"
+POST https://api.openai.com/v1/files
+Authorization: Bearer {{OPENAI_API_KEY}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="purpose"
+
+fine-tune
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="mydata.jsonl"
+
+< ./data/FineTuningSample1.jsonl
+--WebAppBoundary--
+
+###
+
+# Delete file by ID.
+# DELETE https://api.openai.com/v1/files/{file_id}
+
+# curl https://api.openai.com/v1/files/{file_id}
+#  -X DELETE
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+DELETE https://api.openai.com/v1/files/file-123254123125fgh
+Authorization: Bearer {{OPENAI_API_KEY}}
+
+###
+
+# Returns information about a specific file.
+# GET https://api.openai.com/v1/files/{file_id}
+
+GET https://api.openai.com/v1/files/file-fWkS8oJr5zid2izSqJZaDIa3
+Authorization: Bearer {{OPENAI_API_KEY}}
+
+###
+
+# Returns the contents of the specified file
+# GET https://api.openai.com/v1/files/{file_id}/content
+GET https://api.openai.com/v1/files/file-fWkS8oJr5zid2izSqJZaDIa3/content
+Authorization: Bearer {{OPENAI_API_KEY}}
+

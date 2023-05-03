@@ -1,0 +1,20 @@
+# Lists the currently available (non-finetuned) models, and provides basic information about each one such as the owner and availability.
+# GET https://api.openai.com/v1/engines
+
+# curl https://api.openai.com/v1/engines
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+GET https://api.openai.com/v1/engines
+Authorization: Bearer {{OPENAI_API_KEY}}
+
+###
+
+# Retrieves a model instance, providing basic information about it such as the owner and availability.
+# GET https://api.openai.com/v1/engines/{engine_id}
+
+# curl https://api.openai.com/v1/engines/text-davinci-003
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+GET https://api.openai.com/v1/engines/text-davinci-003
+Authorization: Bearer {{OPENAI_API_KEY}}
+
+###
+

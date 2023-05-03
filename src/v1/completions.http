@@ -1,0 +1,25 @@
+# Creates a completion for the provided prompt and parameters.
+# POST https://api.openai.com/v1/completions
+
+# curl https://api.openai.com/v1/completions
+#  -H "Content-Type: application/json"
+#  -H "Authorization: Bearer $OPENAI_API_KEY"
+#  -d '{
+#    "model": "text-davinci-003",
+#    "prompt": "Say this is a test",
+#    "max_tokens": 7,
+#    "temperature": 0
+#  }'
+POST https://api.openai.com/v1/completions
+Authorization: Bearer {{OPENAI_API_KEY}}
+Content-Type: application/json
+
+{
+  "model": "text-davinci-003",
+  "prompt": "Say this is a test",
+  "max_tokens": 7,
+  "temperature": 0
+}
+
+###
+
