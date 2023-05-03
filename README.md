@@ -19,6 +19,8 @@ The OpenAI has some restrictions on the format of the request data, the [sample 
 - [OpenAI API Reference](https://platform.openai.com/docs/api-reference/)
 - [OpenAI Playground](https://beta.openai.com/playground)
 - [HTTP Client plugin](https://www.jetbrains.com/help/idea/2023.1/http-client-in-product-code-editor.html)
+- [Dotnet SDK for OpenAI ChatGPT](https://github.com/betalgo/openai)
+- [Sample Data](https://github.com/betalgo/openai/tree/master/OpenAI.Playground/SampleData)
 
 ## License
 [MIT License](./LICENSE)
