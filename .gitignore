@@ -56,5 +56,5 @@ $RECYCLE.BIN/
 *.iml
 
 # http request config
-./http-client.private.env.json
-./http-client.env.json
+http-client.private.env.json
+http-client.env.json
