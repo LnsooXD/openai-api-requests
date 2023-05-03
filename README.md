@@ -15,5 +15,10 @@ Official Playground: [https://beta.openai.com/playground](https://beta.openai.co
 Grateful to [betalgo/openai](https://github.com/betalgo/openai) for providing some [sample data]([sample data](https://github.com/betalgo/openai/tree/master/OpenAI.Playground/SampleData).
 The OpenAI has some restrictions on the format of the request data, the [sample data](https://github.com/betalgo/openai/tree/master/OpenAI.Playground/SampleData) provided by [betalgo/openai](https://github.com/betalgo/openai) is very helpful.
 
+## References
+- [OpenAI API Reference](https://platform.openai.com/docs/api-reference/)
+- [OpenAI Playground](https://beta.openai.com/playground)
+- [HTTP Client plugin](https://www.jetbrains.com/help/idea/2023.1/http-client-in-product-code-editor.html)
+
 ## License
 [MIT License](./LICENSE)
