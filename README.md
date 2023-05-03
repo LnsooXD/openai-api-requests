@@ -12,7 +12,7 @@ Official Playground: [https://beta.openai.com/playground](https://beta.openai.co
 5. Enjoy!
 
 ## Acknowledgement
-Grateful to [betalgo/openai](https://github.com/betalgo/openai) for providing some [sample data]([sample data](https://github.com/betalgo/openai/tree/master/OpenAI.Playground/SampleData).
+Grateful to [betalgo/openai](https://github.com/betalgo/openai) for providing some [sample data](https://github.com/betalgo/openai/tree/master/OpenAI.Playground/SampleData).
 The OpenAI has some restrictions on the format of the request data, the [sample data](https://github.com/betalgo/openai/tree/master/OpenAI.Playground/SampleData) provided by [betalgo/openai](https://github.com/betalgo/openai) is very helpful.
 
 ## References
